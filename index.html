@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="top-nav">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="src/images/logo-top.png" alt="Logo" class="top-nav-logo">
+                    </a>
+                </div>
+                <div class="right-nav">
+                    <div class="nav-buttons">
+                        <a href="search.html" class="top-nav-button">Поиск</a>
+                        <a href="register.html" class="top-nav-button">Регистрация</a>
+                        <a href="profile.html" class="top-nav-button">Личный кабинет</a>
+                        <a href="add.html" class="top-nav-button">Добавить</a>
+                        <a href="feetback.html" class="top-nav-button">Отзывы</a>
+                    </div>
+                    <div class="page-nav-mobile js-mobile-show"></div>
+                </div>
+            </div>
+        </header>
+        <section class="sect-0">
+            <div class="content">
+                <h1 class="title">
+                    Потеряли вашего питомца?
+                </h1>
+                <div class="intro">
+                    <p class="intro-title">
+                        Мы готовы вам помочь в поиске!
+                    </p>
+                    <p class="decription">
+                        Возможно среди наших пользователей и гостей, вашего питомца уже нашли и ждут, когда вы его
+                        заберёте.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="sect-1 info">
+            <div class="content">
+                <h1 class="title">
+                    Недавно найденные животные
+                </h1>
+                <div class="slider">
+                    <div class="slide active">
+                        <div class="slide-content">
+                            <img class="slide-image" src="src/images/Photos/photo-1.png" alt="Photo">
+                            <div class="slide-description">
+                                <span class="type-animal">
+                                    <p>Вид животного:</p>
+                                    <p></p>
+                                </span>
+                                <span class="location-situation">
+                                    <p>При каких обстоятельствах:</p>
+                                    <p></p>
+                                </span>
+                                <span class="slide-button">
+                                    <a href="#">
+                                        <p class="title-description">
+                                            Подробнее
+                                        </p>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect-2 search">
+            <div class="content">
+                <h1 class="title">
+                    Быстрый поиск вашего питомца
+                </h1>
+                <form class="search-panel" id="id-panel-1">
+                    <input type="search" placeholder="Укажите вид животного..." class="input-search" list="suggestions"
+                        required>
+                    <button type="submit" class="search-button">
+                        ПОИСК
+                    </button>
+                </form>
+                <div class="slider" style="display: none;">
+                    <div class="slide active">
+                        <div class="slide-content">
+                            <img class="slide-image" src="src/images/Photos/photo-1.png" alt="Photo">
+                            <div class="slide-description">
+                                <span class="type-animal">
+                                    <p>Вид животного:</p>
+                                    <p></p>
+                                </span>
+                                <span class="location-situation">
+                                    <p>При каких обстоятельствах:</p>
+                                    <p></p>
+                                </span>
+                                <span class="slide-button">
+                                    <a href="#">
+                                        <p>
+                                            Подробнее
+                                        </p>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect-3 stats">
+            <div class="content">
+                <h1 class="title">
+                    Немного фактов о нас
+                </h1>
+                <div class="content-stats">
+                    <div class="column column-1 info-stats">
+                        <div class="content">
+                            <h4>
+                                О нас
+                            </h4>
+                            <div class="description">
+                                <p>
+                                    <img src="src/images/Icons/500.png" alt="500">
+                                    Помогли найти 500+ животных.
+                                </p>
+                                <p>
+                                    <img src="src/images/Icons/3years.png" alt="3years">
+                                    Более трёх лет способствуем возвращению питомцев к хозяевам.
+                                </p>
+                                <p>
+                                    <img src="src/images/Icons/no-comerc.png" alt="no-comercial">
+                                    Все услуги оказываются бесплатно.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column-2 statistic">
+                        <div class="content">
+                            <h4>
+                                О помощи другим
+                            </h4>
+                            <div class="description">
+                                <p>
+                                    <img src="src/images/Icons/no-see.png" alt="no-see">
+                                    Если вы потеряли питомца, попробуйте найти его у нас.
+                                </p>
+                                <p>
+                                    <img src="src/images/Icons/report.png" alt="report">
+                                    Если вы нашли животное, оставьте анкету и помогите хозяину его найти.
+                                </p>
+                                <p>
+                                    <img src="src/images/Icons/feedback.png" alt="feedback">
+                                    Оставьте отзыв о нашей организации, чтобы продвинуть её и помочь ещё множеству
+                                    людей.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect-4 detailed-cards">
+            <div class="content">
+                <h1 class="title">
+                    Ждущие своих хозяев
+                </h1>
+                <div class="slider-slick">
+                    <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous"
+                        role="button">
+                        Previous
+                    </button>
+                    <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next"
+                        role="button">
+                        Next
+                    </button>
+                </div>
+                <div class="slider">
+                    <div class="slide active-3" id="id1">
+                        <div class="slide-content">
+                            <img class="slide-image" src="src/images/Photos/photo-1.png" alt="Photo">
+                            <div class="slide-description">
+                                <span class="area-see">
+                                    <p class="title-description">Найден в:</p>
+                                    <p></p>
+                                </span>
+                                <span class="contact-number">
+                                    <p class="title-description">Контакты:</p>
+                                    <p></p>
+                                </span>
+                                <span class="indicator">
+                                    <p class="title-description">Статус:</p>
+                                    <p></p>
+                                </span>
+                                <span class="profile">
+                                    <p class="title-description">Добавлено:</p>
+                                    <p></p>
+                                </span>
+                                <span class="date-publish">
+                                    <p class="title-description">Опубликовано:</p>
+                                    <p></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide active-2" id="id2">
+                        <div class="slide-content">
+                            <img class="slide-image" src="src/images/Photos/photo-1.png" alt="Photo">
+                            <div class="slide-description">
+                                <span class="area-see">
+                                    <p class="title-description">Найден в:</p>
+                                    <p></p>
+                                </span>
+                                <span class="contact-number">
+                                    <p class="title-description">Контакты:</p>
+                                    <p></p>
+                                </span>
+                                <span class="indicator">
+                                    <p class="title-description">Статус:</p>
+                                    <p></p>
+                                </span>
+                                <span class="profile">
+                                    <p class="title-description">Добавлено:</p>
+                                    <p></p>
+                                </span>
+                                <span class="date-publish">
+                                    <p class="title-description">Опубликовано:</p>
+                                    <p></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide active-1" id="id3">
+                        <div class="slide-content">
+                            <img class="slide-image" src="src/images/Photos/photo-1.png" alt="Photo">
+                            <div class="slide-description">
+                                <span class="area-see">
+                                    <p class="title-description">Найден в:</p>
+                                    <p></p>
+                                </span>
+                                <span class="contact-number">
+                                    <p class="title-description">Контакты:</p>
+                                    <p></p>
+                                </span>
+                                <span class="indicator">
+                                    <p class="title-description">Статус:</p>
+                                    <p></p>
+                                </span>
+                                <span class="profile">
+                                    <p class="title-description">Добавлено:</p>
+                                    <p></p>
+                                </span>
+                                <span class="date-publish">
+                                    <p class="title-description">Опубликовано:</p>
+                                    <p></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide active-2" id="id4">
+                        <div class="slide-content">
+                            <img class="slide-image" src="src/images/Photos/photo-1.png" alt="Photo">
+                            <div class="slide-description">
+                                <span class="area-see">
+                                    <p class="title-description">Найден в:</p>
+                                    <p></p>
+                                </span>
+                                <span class="contact-number">
+                                    <p class="title-description">Контакты:</p>
+                                    <p></p>
+                                </span>
+                                <span class="indicator">
+                                    <p class="title-description">Статус:</p>
+                                    <p></p>
+                                </span>
+                                <span class="profile">
+                                    <p class="title-description">Добавлено:</p>
+                                    <p></p>
+                                </span>
+                                <span class="date-publish">
+                                    <p class="title-description">Опубликовано:</p>
+                                    <p></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide active-3" id="id5">
+                        <div class="slide-content">
+                            <img class="slide-image" src="src/images/Photos/photo-1.png" alt="Photo">
+                            <div class="slide-description">
+                                <span class="area-see">
+                                    <p class="title-description">Найден в:</p>
+                                    <p></p>
+                                </span>
+                                <span class="contact-number">
+                                    <p class="title-description">Контакты:</p>
+                                    <p></p>
+                                </span>
+                                <span class="indicator">
+                                    <p class="title-description">Статус:</p>
+                                    <p></p>
+                                </span>
+                                <span class="profile">
+                                    <p class="title-description">Добавлено:</p>
+                                    <p></p>
+                                </span>
+                                <span class="date-publish">
+                                    <p class="title-description">Опубликовано:</p>
+                                    <p></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect-5 detailed-search">
+            <div class="content">
+                <h1 class="title">
+                    Детальный поиск
+                </h1>
+                <form class="search-panel" id="id-panel-2">
+                    <input type="search" placeholder="Укажите район..." class="detailed input-search">
+                    <input type="search" placeholder="Укажите вид животного..." class="detailed input-search"
+                        list="suggestions">
+                    <div class="submit-button-search">
+                        <button type="submit" class="search-button">
+                            ПОИСК
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="sect-6 feetback">
+            <div class="content">
+                <h1 class="title">
+                    Отзывы
+                </h1>
+                <div class="feetback-slider">
+                    <div class="corousel-feetback-slider">
+                        <div class="slide slide-1">
+                            <div class="content-slide">
+                                <img src="src/images/Photos/photo-1.png" alt="photo-pet">
+                                <div class="description">
+                                    <span class="author-feetback">
+                                        <p class="title-description">Автор:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="feetback-description">
+                                        <p class="title-description">Отзыв:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="date-publish-feetback">
+                                        <p class="title-description">Опубликовано:</p>
+                                        <p></p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide slide-2">
+                            <div class="content-slide">
+                                <img src="src/images/Photos/photo-1.png" alt="photo-pet">
+                                <div class="description">
+                                    <span class="author-feetback">
+                                        <p class="title-description">Автор:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="feetback-description">
+                                        <p class="title-description">Отзыв:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="date-publish-feetback">
+                                        <p class="title-description">Опубликовано:</p>
+                                        <p></p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide slide-3">
+                            <div class="content-slide">
+                                <img src="src/images/Photos/photo-1.png" alt="photo-pet">
+                                <div class="description">
+                                    <span class="author-feetback">
+                                        <p class="title-description">Автор:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="feetback-description">
+                                        <p class="title-description">Отзыв:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="date-publish-feetback">
+                                        <p class="title-description">Опубликовано:</p>
+                                        <p></p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide slide-4">
+                            <div class="content-slide">
+                                <img src="src/images/Photos/photo-1.png" alt="photo-pet">
+                                <div class="description">
+                                    <span class="author-feetback">
+                                        <p class="title-description">Автор:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="feetback-description">
+                                        <p class="title-description">Отзыв:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="date-publish-feetback">
+                                        <p class="title-description">Опубликовано:</p>
+                                        <p></p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide slide-5">
+                            <div class="content-slide">
+                                <img src="src/images/Photos/photo-1.png" alt="photo-pet">
+                                <div class="description">
+                                    <span class="author-feetback">
+                                        <p class="title-description">Автор:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="feetback-description">
+                                        <p class="title-description">Отзыв:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="date-publish-feetback">
+                                        <p class="title-description">Опубликовано:</p>
+                                        <p></p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide slide-6">
+                            <div class="content-slide">
+                                <img src="src/images/Photos/photo-1.png" alt="photo-pet">
+                                <div class="description">
+                                    <span class="author-feetback">
+                                        <p class="title-description">Автор:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="feetback-description">
+                                        <p class="title-description">Отзыв:</p>
+                                        <p></p>
+                                    </span>
+                                    <span class="date-publish-feetback">
+                                        <p class="title-description">Опубликовано:</p>
+                                        <p></p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect-7 subscribe">
+            <div class="content">
+                <h1 class="title">
+                    Подписка на рассылку
+                </h1>
+                <form class="subscribe-panel" id="id-panel-3">
+                    <input type="email" placeholder="Укажите почту..." class="input-subscribe" required>
+                    <span class="checkbox-subscribe">
+                        <input type="checkbox" required> Я согласен на обработку персональных данных
+                    </span>
+                    <button type="submit" class="subscribe-button">
+                        ПОДПИСАТЬСЯ
+                    </button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="content">
+                <h3 class="footer-title">ПОДРОБНОСТИ КОМПАНИИ</h3>
+                <div class="info">
+                    <div class="contacts footer-desc">
+                        <h4>Контактные данные:</h4>
+                        <div class="content_footer-desc">
+                            <p>
+                                Телефон "8 (800)123-45-67"
+                            </p>
+                            <p>
+                                e-mail: mail@newlife.ru
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-nav footer-desc">
+                        <h4>Навигация по сайту</h4>
+                        <div class="content_footer-desc">
+                            <p>
+                                <a href="#" class="footer-nav-button">Главная</a>
+                            </p>
+                            <p>
+                                <a href="search.html" class="footer-nav-button">Поиск</a>
+                            </p>
+                            <p>
+                                <a href="register.html" class="footer-nav-button">Регистрация</a>
+                            </p>
+                            <p>
+                                <a href="profile.html" class="footer-nav-button">Личный кабинет</a>
+                            </p>
+                            <p>
+                                <a href="add.html" class="footer-nav-button">Добавить</a>
+                            </p>
+                            <p>
+                                <a href="feetback.html" class="footer-nav-button">Отзывы</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="documents footer-desc">
+                        <h4>Юридическая документация</h4>
+                        <div class="content_footer-desc">
+                            <p>
+                                <a href="license.html" class="footer-nav-button">
+                                    КОНФИДЕНЦИАЛЬНАЯ ИНФОРМАЦИЯ
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        © 2022 -
+                        <script>document.write(new Date().getFullYear())</script> - AES WarDarkness | FenneCore AGP Team
+                        | Faradey A - <a href="license.html">Лицензия</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<datalist id="suggestions">
+    <option value="Кот">
+    <option value="Собака">
+    <option value="Хорёк">
+    <option value="Хомяк">
+    <option value="Лиса">
+    <option value="Cуслик">
+    <option value="Попугай">
+</datalist>
+
+</html>
