@@ -1,0 +1,1279 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+/* Styles */
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 16px/1.4 'Play', Arial, Helvetica, sans-serif;
+    background: #000;
+}
+
+section div.content h1.title {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin: 0;
+    margin-bottom: 25px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    text-transform: uppercase;
+}
+
+p.title-description {
+    text-transform: uppercase;
+}
+
+form input:invalid {
+    border-color: red;
+}
+
+main {
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+}
+
+@media screen and (min-width: 1920px) {
+
+    main:before,
+    main:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        pointer-events: none;
+        z-index: 3;
+    }
+
+    main:after {
+        right: 0;
+        background: linear-gradient(to left, #000, transparent);
+    }
+
+    main:before {
+        left: 0;
+        background: linear-gradient(to right, #000, transparent);
+    }
+}
+
+
+/* Navigation Style */
+.top-nav {
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    z-index: 9999;
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1920px;
+}
+
+/* Logo in navigation */
+.nav-logo {
+    display: block;
+    margin: 0 20px;
+    flex: 1 1 100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.top-nav-logo {
+    width: 180px;
+    height: 28px;
+}
+
+.nav-logo {
+    display: block;
+}
+
+/* Right panel in navigation */
+.right-nav {
+    display: flex;
+    text-transform: uppercase;
+    align-items: stretch;
+    flex: 0 0 auto;
+    font-size: 12px;
+    padding-right: 15px;
+}
+
+.right-nav a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: #fff;
+}
+
+/* Section content */
+section {
+    max-width: 1920px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    display: block;
+    margin: auto;
+    height: 500px;
+    color: #fff;
+    font-size: 35px;
+}
+
+
+
+
+/* Section 0 - Header Style */
+section.sect-0 {
+    background: url("../images/backgrounds/bg.jpg") no-repeat 50% 97%;
+    height: 600px;
+}
+
+section.sect-0 div.content h1.title {
+    border-style: none;
+    border-bottom: 0;
+    background: 0;
+    padding-top: 50px;
+}
+
+.content {
+    height: 100%;
+}
+
+.intro {
+    width: 50%;
+    padding-top: 25px;
+    padding-left: 5%;
+    font-size: 25px;
+}
+
+
+
+
+/* Section 1 - Description Action Style */
+.sect-1.info {
+    background: url(../images/backgrounds/bg-1.png) no-repeat 50% 50%;
+    height: 1000px;
+}
+
+/* Slider Style */
+.sect-1.info .slider .slide.active {
+    text-align: center;
+}
+
+.sect-1.info .slider .slide-content {
+    display: flex;
+    padding: 0 10%;
+}
+
+.sect-1.info .slider .slide-image {
+    height: 600px;
+}
+
+.sect-1.info .slider .slide-description {
+    background-color: #000;
+    text-align: left;
+    padding: 25px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sect-1.info .slider .slide-image,
+.sect-1.info .slider .slide-description {
+    flex: 2 1 100%;
+}
+
+.sect-1.info .slider .slide-button {
+    text-decoration: none;
+    background: #ff6224;
+    border: 1px solid #ff622433;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 75px;
+    align-self: flex-end;
+    line-height: 30px;
+    border-radius: 15px;
+}
+
+.sect-1.info .slider .slide-button:hover {
+    background: #ff62249d;
+    transition: all 0.5s;
+}
+
+.sect-1.info .slider .slide-button a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+}
+
+span {
+    display: block;
+}
+
+
+
+
+/* Section 2 - Fast Search Section Style */
+section.search {
+    background: url(../images/backgrounds/bg-2.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: auto;
+}
+
+/* Section 2 - Fast Search Panel Style */
+form.search-panel {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+form.search-panel input {
+    text-align: left;
+    margin-bottom: 40px;
+    width: 50%;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, .2);
+}
+
+form.search-panel button {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: #ff6224;
+    cursor: pointer;
+    color: #fff;
+}
+
+form.search-panel button:hover {
+    background-color: #db521c;
+    transition: all 0.5s;
+}
+
+
+
+
+
+/* Section 3 - Statistic Section Style */
+section.stats {
+    background: url(../images/backgrounds/bg-3.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 1000px;
+}
+
+/* Section 3 - Content Statistic Style */
+div.content-stats {
+    display: flex;
+}
+
+div.content-stats div.column {
+    display: block;
+    flex: 1 1 100%;
+    height: 700px;
+    padding: 0 150px;
+    flex-direction: column;
+}
+
+div.content-stats div.column div.content {
+    display: block;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+
+div.content-stats div.column div.content h4 {
+    padding-top: 25px;
+}
+
+div.content-stats div.column div.content div.description {
+    height: 100%;
+    text-align: left;
+    padding: 0 50px 0 100px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.content-stats div.column div.content div.description p img {
+    margin-right: 10px;
+}
+
+div.content-stats div.column div.content div.description p {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+
+
+/* Section 4 - Detailed Actions Style */
+section.detailed-cards {
+    background: url(../images/backgrounds/bg-4.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 1000px;
+}
+
+/* Slider Style */
+.sect-4.detailed-cards .slider {
+    width: 100%;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sect-4.detailed-cards .slider .slide.active-3#id1,
+#id5 {
+    display: block;
+    width: 300px;
+    height: 400px;
+    font-size: 10px;
+    padding: 175px 0;
+}
+
+.sect-4.detailed-cards .slider .slide.active-2#id2,
+#id4 {
+    display: block;
+    width: 500px;
+    height: 400px;
+    font-size: 15px;
+    padding: 100px 0;
+}
+
+.sect-4.detailed-cards .slider .slide.active-1#id3 {
+    display: block;
+    width: 900px;
+    height: 500px;
+    font-size: 20px;
+}
+
+.sect-4.detailed-cards .slider .slide .slide-content {
+    background: #000;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.sect-4.detailed-cards .slider .slide .slide-content .slide-description {
+    width: 100%;
+    padding: 0 25px 25px 25px;
+}
+
+.sect-4.detailed-cards .slider .slide .slide-content img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/* Section 4 - Slider Arrow Button */
+.sect-4.detailed-cards .content .slider-slick {
+    position: relative;
+}
+
+.slick-arrow {
+    position: absolute;
+    padding: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    border: 1px solid #fff;
+    height: 40px;
+    top: 350px;
+    bottom: o;
+    width: 40px;
+    cursor: pointer;
+    background: url("../images/icons/slider-arrow.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.sect-4.detailed-cards .slick-prev {
+    margin-right: 462px;
+    right: 50%;
+    background-position: 0 50%;
+}
+
+.sect-4.detailed-cards .slick-next {
+    margin-left: 462px;
+    left: 50%;
+    background-position: -40px 50%;
+}
+
+/* Section 4 - Slider Slick HOVER */
+.sect-4.detailed-cards .slick-prev:hover {
+    margin-right: 462px;
+    right: 50%;
+    background-position: -80px 50%;
+}
+
+.sect-4.detailed-cards .slick-next:hover {
+    margin-left: 462px;
+    left: 50%;
+    background-position: -120px 50%;
+}
+
+
+
+
+/* Section 5 - Detailed Search Style */
+section.detailed-search {
+    background: url(../images/backgrounds/bg-5.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: auto;
+}
+
+/* Section 5 - Detailed Search Button Style */
+form.search-panel>.submit-button-search button {
+    margin-bottom: 40px;
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: #ff6224;
+    cursor: pointer;
+    color: #fff;
+}
+
+form.search-panel>.submit-button-search button:hover {
+    background-color: #db521c;
+    transition: all 0.5s;
+}
+
+
+
+
+/* Section 6 - Feedback Style */
+section.feetback {
+    background: url(../images/backgrounds/bg-6.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 1000px;
+}
+
+/* Section 6 - Feedback Slider Style */
+.feetback-slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.corousel-feetback-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    max-width: 100%;
+}
+
+.corousel-feetback-slider .slide {
+    font-size: 16px;
+    width: 500px;
+    height: 700px;
+    animation: horizontal 30s linear infinite;
+    /* Увеличена длительность анимации */
+    will-change: transform;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Animation in Slider */
+.corousel-feetback-slider .slide:nth-child(1) {
+    animation-delay: calc(6s * -1);
+    /* Увеличена задержка для первого слайда */
+}
+
+.corousel-feetback-slider .slide:nth-child(2) {
+    animation-delay: calc(6s * 0);
+}
+
+.corousel-feetback-slider .slide:nth-child(3) {
+    animation-delay: calc(6s * 1);
+}
+
+.corousel-feetback-slider .slide:nth-child(4) {
+    animation-delay: calc(6s * 2);
+}
+
+.corousel-feetback-slider .slide:nth-child(5) {
+    animation-delay: calc(6s * 3);
+    /* Увеличена задержка для последнего слайда */
+}
+
+/* keyframes Animation in Slider */
+@keyframes horizontal {
+    0% {
+        transform: translateX(300%);
+        visibility: hidden;
+    }
+
+    50% {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateX(-300%);
+        visibility: hidden;
+    }
+}
+
+
+/* Content in Slider */
+.corousel-feetback-slider .slide .content-slide {
+    background: #000;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.corousel-feetback-slider .slide .content-slide img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.corousel-feetback-slider .slide .content-slide .description {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 0 25px;
+    flex-grow: 1;
+}
+
+.corousel-feetback-slider .slide .content-slide .description span.date-publish-feetback {
+    line-height: 500px;
+}
+
+
+
+
+/* Section 7 - Subscribe Style */
+section.subscribe {
+    background: url(../images/backgrounds/bg-7.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 400px;
+}
+
+/* Section 7 - Subscribe Button Style */
+form.subscribe-panel {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+form.subscribe-panel input {
+    text-align: left;
+    margin-bottom: 40px;
+    width: 50%;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, .2);
+}
+
+form.subscribe-panel button.subscribe-button {
+    margin-bottom: 40px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: #ff6224;
+    cursor: pointer;
+    color: #fff;
+}
+
+form.subscribe-panel button.subscribe-button:hover {
+    background-color: #db521c;
+    transition: all 0.5s;
+}
+
+span.checkbox-subscribe {
+    font-size: 16px;
+    text-align: center;
+    height: 25px;
+    width: 100%;
+}
+
+span.checkbox-subscribe input {
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: auto;
+}
+
+
+
+
+/* Footer Style */
+footer {
+    color: #ffffffb7;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    height: 500px;
+    width: 100%;
+    background: #000;
+    text-decoration: none;
+}
+
+div.copyright p a {
+    color: #ffffff62;
+}
+
+div.copyright {
+    color: #ffffff62;
+    padding-top: 60px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+div.copyright p {
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+}
+
+footer h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    vertical-align: bottom;
+}
+
+footer div.content {
+    padding: 25px;
+    padding-bottom: 0;
+}
+
+/* Footer Style - Detailed Style */
+footer div.content div.info {
+    padding: 15px;
+    display: flex;
+    text-align: center;
+}
+
+footer div.content div.info div.footer-desc {
+    flex: 2 1 100%;
+    display: block;
+}
+
+footer div.content div.info div.footer-desc div.content_footer-desc p a {
+    text-decoration: none;
+    color: #ff6224;
+}
+
+footer div.content div.info div.footer-desc div.content_footer-desc p a:hover {
+    color: #ff62249d;
+    transition: all 0.25s;
+}
+
+
+
+
+/* Section 8 - Login | Register Style */
+section.reg_log {
+    background: url(../images/backgrounds/bg-1.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 600px;
+}
+
+section.reg_log .content {
+    width: 50%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.content .description-reset a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Section 8 - Form Style */
+form.OAuth-container {
+    width: 100%;
+    margin: 25px auto;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form.OAuth-container input{
+    margin-bottom: 25px;
+    height: 49px;
+    width: 500px;
+    border-radius: 15px;
+    border: 0;
+    padding-left: 15px;
+}
+
+form.OAuth-container button{
+    height: 49px;
+    width: 250px;
+    border-radius: 15px;
+    border: 0;
+    color: #fff;
+    background: #ff6224;
+}
+
+form.OAuth-container button:hover{
+    background: #db521c;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.confirming-password {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    gap: 5px;
+}
+
+.confirm-police {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.confirm-police input.confirm-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+/* Section 9 - Profile Style */
+section.profile {
+    background: url(../images/backgrounds/bg-8.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 1000px;
+}
+
+section.profile .content {
+    width: 100%;
+}
+
+/* Section 9 - Forms Input | UI Style */
+.category-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.forms {
+    height: auto;
+    width: 600px;
+    background: rgba(25, 25, 25, .7);
+    border-radius: 15px;
+    margin: 0;
+    padding: 0 25px 25px 25px;
+}
+
+.forms h4 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0 0 40px 0;
+    padding: 25px 0 0 0;
+}
+
+.forms .input-place {
+    margin: 0 0 25px 0;
+    padding: 25px 0 0 0 ;
+}
+
+.forms .input-place p {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.forms .input-place input {
+    width: 85%;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 7px;
+    background: #ffffffbb;
+}
+
+.forms button.save-button {
+    width: 85%;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    border: 0;
+    border-radius: 7px;
+    background: #ff6224;
+}
+
+.forms button.save-button:hover {
+    background: #b64518;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.input-place .in-forms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.in-forms button {
+    width: auto;
+    height: 40px;
+    background: #ff6224;
+    border: 0;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.in-forms button:hover {
+    background: #b64518;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Section 10 - Status Publicshment Style */
+section.status-publishment {
+    background: url(../images/backgrounds/bg-10.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 1000px;
+}
+
+section.status-publishment .content {
+    width: 100%;
+}
+
+.forms.status-publicated {
+    width:  95%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+/* Section 10 - Status Publicshment Forms Style */
+.forms.status-publicated .content-form-status {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    gap: 25px;
+}
+
+nav ul {
+    height:500px; 
+    width:400px;
+}
+
+nav ul {
+    overflow:hidden; 
+    overflow-y:scroll;
+    max-height: 100%;
+}
+
+nav ul .status-card {
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 15px;
+    margin: 0 5px 10px 5px;
+}
+
+nav ul .status-card .description-status-card {
+    display: block;
+    color: #000;
+    font-size: 20px;
+    height: auto;
+    padding: 5px;
+    width: 100%;
+}
+
+nav ul .status-card img {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+nav ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+nav ul::-webkit-scrollbar-track {
+    background: #f1f1f115;
+    border-radius: 4px;
+}
+
+nav ul::-webkit-scrollbar-thumb {
+    background: #ff6224;
+    border-radius: 4px;
+}
+
+.content-form-status .status h5 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.delete-button, .edit-button {
+    width: 100%;
+    height: 50px;
+    background: #ff6224;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.delete-button, .edit-button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* Section 11 - Add Style */
+section.add {
+    background: url(../images/backgrounds/bg-11.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: auto;
+}
+
+section.add .content {
+    width: 100%;
+}
+
+/* Section 11 - Add Forms Style */
+.forms-add {
+    background: rgba(0, 0, 0, .6);
+    width: 75%;
+    margin: 25px auto;
+    height: 90%;
+    border-radius: 15px;
+    padding: 1px 15px 0 15px;
+    text-align: center;
+}
+
+.forms-add h4{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-add .add-button {
+    width: 200px;
+    height: 49px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    background: #ff6224;
+    color: #fff;
+}
+
+.form-add .add-button:hover {
+    transition: all .5s;
+    background: #b64518;
+    cursor: pointer;
+}
+
+.forms-add .form-add .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 75px;
+}
+
+.place-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.place-input input {
+    width: 350px;
+    border-radius: 15px;
+    height: 49px;
+    padding-left: 15px;
+}
+
+span.mini-form {
+    font-size: 16px;
+    padding: 0;
+}
+
+.form-2 span input[type="checkbox"],
+.form-1 span input[type="checkbox"] {
+    vertical-align: middle;
+    width: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+input.register-checkbox ~ .password-field {
+    display: none;
+}
+
+input.register-checkbox:checked ~ .password-field {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.file-input {
+    background: #ff6224;
+    height: 49px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.file-input p {
+    text-align: center;
+    font-size: 14.5px;
+}
+
+.file-input:hover {
+    background: #b64518;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.file-input input[type=file]{
+    opacity: 0;
+    position: absolute;
+    width: 350px;
+    height: 49px;
+    z-index: 10;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+/* Section 12 - Orders Management Style */
+section.orders-management {
+    background: #1b1b1b;
+    background-size: cover;
+    height: auto;
+}
+
+section.orders-management .content {
+    width: 100%;
+}
+
+/* Section 12 - Ankets Content Style */
+.new-cards-request {
+    width: 98%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 auto;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #000;
+}
+
+.new-cards-request::-webkit-scrollbar-track {
+    background: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.new-cards-request::-webkit-scrollbar {
+    width: 8px;
+}
+
+.new-cards-request::-webkit-scrollbar-thumb {
+    width: 8px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(56, 119, 255);
+}
+
+.new-cards-request .card {
+    background: rgba(256, 256, 256, .9);
+    border-radius: 10px;
+    color: #000;
+    margin: 15px;
+    padding: 0 50px;
+}
+
+.new-cards-request .card h4 {
+    text-align: center;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+.new-cards-request .card .card-content{
+    font-size: 16px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.new-cards-request .card .card-content .control-container {
+    display: block;
+    width: 100%;
+}
+
+.new-cards-request .card .card-content .control-container img {
+    width: 100%;
+}
+
+.new-cards-request .card .card-content .text-container {
+    display: block;
+    width: 100%;
+}
+
+.new-cards-request .card .card-content .text-container span {
+    text-align: right;
+}
+
+.title-content {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.control-container .buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 5%;
+}
+
+.control-container .buttons-container button {
+    height: 49px;
+    width: 200px;
+    border-radius: 15px;
+    border: 0;
+    background: #ff6224;
+    color: #fff;
+}
+
+.control-container .buttons-container button:hover {
+    background: #b64518;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Section 13 - Pet Style */
+section.pet {
+    background: #1b1b1b;
+    background-size: cover;
+    height: auto;
+}
+
+section.pet .content {
+    width: 100%;
+}
+
+/* Section 13 - Pet Content Style */
+table.table-container {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #fff;
+}
+
+table.table-container tr {
+    height: 100px;
+}
+
+table.table-container tr.content-table:hover {
+    background-color: rgba(256, 256, 256, .4);
+    transition: all .5s;
+}
+
+table.table-container tr th {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #fff;
+}
+
+table.table-container tr th img{
+    height: auto;
+    width: 100%;
+}
+
+tr.title-table {
+    font-size: 30px;
+}
+
+tr.content-table {
+    font-size: 20px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    padding: 25px;
+}
+
+.pagination button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background: #ff6224;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.pagination button:hover {
+    background: #b64518;
+    transition: all .5s;
+    cursor: pointer;
+}
