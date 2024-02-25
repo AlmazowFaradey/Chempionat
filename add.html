@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>Добавить найденного питомца</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="top-nav">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="src/images/logo-top.png" alt="Logo" class="top-nav-logo">
+                    </a>
+                </div>
+                <div class="right-nav">
+                    <div class="nav-buttons">
+                        <a href="search.html" class="top-nav-button">Поиск</a>
+                        <a href="register.html" class="top-nav-button">Регистрация</a>
+                        <a href="profile.html" class="top-nav-button">Личный кабинет</a>
+                        <a href="#" class="top-nav-button">Добавить</a>
+                        <a href="feetback.html" class="top-nav-button">Отзывы</a>
+                    </div>
+                    <div class="page-nav-mobile js-mobile-show"></div>
+                </div>
+            </div>
+        </header>
+        <section class="sect-0">
+            <div class="content">
+                <h1 class="title">
+                    Ваш профиль
+                </h1>
+                <div class="intro">
+                    <p class="intro-title">
+                        Мы готовы вам помочь в поиске!
+                    </p>
+                    <p class="decription">
+                        Здесь вы можете добавить найденого питомца в нашу базу.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="sect-11 add">
+            <div class="content">
+                <div class="forms-add">
+                    <form class="form form-add">
+                        <h4>
+                            Добавление найденного питомца
+                        </h4>
+                        <div class="input-container">
+                            <div class="place-input form-1">
+                                <input type="tel" placeholder="Введите ваш контактный номер..." class="" required title="Введите ваш контактный номер...">
+                                <input type="email" placeholder="Введите ваш Email..." class="" required title="Введите ваш Email...">
+                                <input type="search" placeholder="Введите вид животного..." class="" required title="Введите вид животного..." list="suggestions">
+                                <span class="mini-form file-input">
+                                    <input type="file"class="" accept="image/*" multiple required title="Добавьте фотографии...">
+                                    <p>Выберите фото животного...</p>
+                                </span>
+                                <span class="mini-form">
+                                    <input type="checkbox" class="register-checkbox">
+                                    Хотите зарегистрировать свой профиль?
+                                    <div class="password-field">
+                                        <input type="text" placeholder="Введите пароль..." class="" title="Введите пароль...">
+                                        <input type="text" placeholder="Подтвердите пароль..." class="" title="Подтвердите пароль...">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="place-input form-2">
+                                <input type="text" placeholder="Район" class="" required>
+                                <input type="text" placeholder="Клеймо (если есть)..." class="">
+                                <input type="text" placeholder="Дополнительная информация..." class="" required>
+                                <input type="datetime-local" placeholder="Когда было найдено животное..." class="" required>
+                                <span class="mini-form">
+                                    <input type="checkbox" class="" required>
+                                    Вы даёте разрешение на обработку персональных данных
+                                </span>
+                            </div>
+                        </div>
+                        <button type="submit" class="add-button">Опубликовать</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="content">
+                <h3 class="footer-title">ПОДРОБНОСТИ КОМПАНИИ</h3>
+                <div class="info">
+                    <div class="contacts footer-desc">
+                        <h4>Контактные данные:</h4>
+                        <div class="content_footer-desc">
+                            <p>
+                                Телефон "8 (800)123-45-67"
+                            </p>
+                            <p>
+                                e-mail: mail@newlife.ru
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-nav footer-desc">
+                        <h4>Навигация по сайту</h4>
+                        <div class="content_footer-desc">
+                            <p>
+                                <a href="index.html" class="footer-nav-button">Главная</a>
+                            </p>
+                            <p>
+                                <a href="search.html" class="footer-nav-button">Поиск</a>
+                            </p>
+                            <p>
+                                <a href="register.html" class="footer-nav-button">Регистрация</a>
+                            </p>
+                            <p>
+                                <a href="profile.html" class="footer-nav-button">Личный кабинет</a>
+                            </p>
+                            <p>
+                                <a href="#" class="footer-nav-button">Добавить</a>
+                            </p>
+                            <p>
+                                <a href="feetback.html" class="footer-nav-button">Отзывы</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="documents footer-desc">
+                        <h4>Юридическая документация</h4>
+                        <div class="content_footer-desc">
+                            <p>
+                                <a href="license.html" class="footer-nav-button">
+                                    КОНФИДЕНЦИАЛЬНАЯ ИНФОРМАЦИЯ
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        © 2022 -
+                        <script>document.write(new Date().getFullYear())</script> - AES WarDarkness | FenneCore AGP Team
+                        | Faradey A - <a href="license.html">Лицензия</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<datalist id="suggestions">
+    <option value="Кот">
+    <option value="Собака">
+    <option value="Хорёк">
+    <option value="Хомяк">
+    <option value="Лиса">
+    <option value="Cуслик">
+    <option value="Попугай">
+</datalist>
+
+</html>
